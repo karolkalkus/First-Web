@@ -1,0 +1,368 @@
+﻿/*  TABLE OF CONTENT
+*   1.Reset CSS
+*   2. Main styles
+*   3. Header
+*
+*
+*/
+
+/*RESET CSS*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*RESET CSS END*/
+
+body {
+    font: 400 18px / 1.3em Josefin Sans, Arial, sans-serif;
+    color: #777777;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+/* background first block*/
+
+.page-header{
+    background-image: url(img/image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-header > .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 43px 230px 0 230px ;
+}
+
+.brand, .brand img {
+    display: block;
+}
+
+/* Links*/
+a{
+    color: #fff; 
+    text-decoration: none;
+}
+a:hover{
+    opacity: 0.8;
+}
+
+/* Images */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Grid */
+
+ 
+/* Page Header menu*/
+
+    
+/* Menu */
+.menu-items{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-items li{
+    margin: 4px;
+    display: inline-block;
+}
+
+.menu-items li a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2.1em;
+    font-weight: 500;
+}
+
+/* Text below*/
+
+.menu-header{
+    color: #fff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-header p {
+    font-size: 32px;
+    font-weight: 100;
+    font-style: italic;
+    padding-top: 225px;
+}
+
+.menu-header h2 {
+    font-size: 66px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 60px; 
+}
+
+.btn-lrn {
+    padding-top: 120px;
+    padding-bottom: 190px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.btn-lrn .button-learn{
+    padding: 21px 68px; 
+    border-radius: 3px;
+	border: 3px solid ;
+}
+
+/* Page section   */
+
+.page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 100px 0;
+}
+
+.page__intro{
+background-color: #f5f5f5;
+}
+
+.page p{
+    color: #777777;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.4em;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+.thin {
+    font-weight: 300;
+    letter-spacing: -1.5px;
+}
+.page h2{
+    
+    margin-bottom: 40px;
+}
+
+.section-header1 {
+    max-width: 850px;
+    
+}
+
+
+.section-header2 {
+background-color: #f5f5f5;
+    max-width: 850px;
+    margin: 100px 0 100px 0;
+}
+.section-header1 img {
+    float: right;
+    margin: 10px 0 10px 74px;
+    max-width: 221px;
+    
+    
+}
+
+.section-header2 img {
+    float: left;
+    margin: 20px 54px 30px 0;
+    max-width: 272px;
+}
+
+/*  Images  */
+
+.images{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+font-size: 18px;
+font-weight: 300;
+line-height: 1em;
+letter-spacing: -0.45px;
+    margin: 100px 270px 100px 270px;
+}
+
+.images h3{
+    
+color: #222222;
+font-size: 22px;
+font-weight: 600;
+letter-spacing: -0.55px;
+    margin-bottom: 10px;
+    
+}
+
+.images p{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.images-list{
+    float: left;
+
+}
+.container{
+   max-width:400px;
+    padding: 50px;
+
+}
+
+.images-list img{
+    float: left;
+    margin: 5px 20px 30px 0;
+}
+
+/* Sekcja awasome clients*/
+
+.clients {
+    background-color: #f5f5f5;
+    font-size: 65px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title {
+    color: #222222;
+    padding-top: 100px;
+}
+
+.subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.element {
+    margin-bottom: 100px;
+    display: inline;
+    margin: 0 auto;
+    
+}
+.element-one{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 270px 40px 230px;
+}
+
+.element-two{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 240px 0 270px;
+    padding: 0 0 100px 0;
+    
+
+}
+
+
+.img-one {
+    margin-right: 25px;
+    max-width: 280px;
+    max-height: 280px;
+}
+
+
+.img-two {
+    margin-left: 25px;
+    max-width: 280px;
+    max-height: 280px;
+}
+
+
+.normal {
+
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.1em;
+    border: 1px solid #e8e8e8;
+    background-color: white;
+    text-align: left;
+    padding: 40px 80px 40px 100px;
+    max-width: 660px;
+}
+
+.blue {
+    color: #7690c5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9em;
+}
+
+
+/* Media */
+
+.media{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 60px 0 60px 0;
+}
+.pics{
+  margin-right: 40px;
+    
+}
+
+/* Footer*/
+
+.page-footer {
+
+    text-align: center;
+}
